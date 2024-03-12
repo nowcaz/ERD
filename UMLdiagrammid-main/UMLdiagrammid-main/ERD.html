@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ERD</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #007bff;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        ul {
+            margin-bottom: 20px;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>ERD</h1>
+        <h2>ERD sümbolid</h2>
+        <img src = "images/sumbolid.png" width = 500>
+
+        <h2>ERD komponendid ja funktsioonid</h2>
+        
+        <p>Olemused (Entities):</p>
+        <ul>
+            <li>Olemused on reaalsed või kujuteldavad objektid, mida soovite andmebaasis jälgida.</li>
+            <li>Iga olemus esindab konkreetset andmekogumit, millel on omadused või atribuudid.</li>
+            <li>Näiteks võib klient olla üks olemus ja tal võivad olla atribuudid nagu nimi, aadress ja telefoninumber.</li>
+        </ul>
+        <p>Atribuudid (Attributes):</p>
+        <ul>
+            <li>Atribuudid on omadused, mis kirjeldavad olemusi.</li>
+            <li>Need on andmed, mida soovite iga olemuse kohta salvestada.</li>
+            <li>Iga atribuudi jaoks on määratud andmetüüp (nt tekst, number, kuupäev jne).</li>
+            <li>Näiteks klienti kirjeldavate atribuutide hulka võivad kuuluda eesnimi, perekonnanimi, telefoninumber jne.</li>
+        </ul>
+        <p>Suhted (Relationships):</p>
+        <ul>
+            <li>Suhted kirjeldavad seoseid erinevate olemuste vahel.</li>
+            <li>Need näitavad, kuidas üks olemus on seotud teisega.</li>
+            <li>Suhted võivad olla üks-ühele, üks-palju või palju-palju.</li>
+            <li>Näiteks võib klient olla seotud tellimusega, kus üks klient võib omada mitmeid tellimusi, moodustades seega üks-palju suhte.</li>
+        </ul>
+        <p>Võtmed (Keys):</p>
+        <ul>
+            <li>Võtmed on atribuudid või atribuutide kombinatsioonid, mille abil saab üheselt tuvastada iga olemuse eksemplari.</li>
+            <li>Primaarvõti (Primary Key) on ainulaadne võti, mida kasutatakse konkreetse olemuse eksemplari identifitseerimiseks.</li>
+            <li>Võõrvõti (Foreign Key) on võti, mis loob seose kahe erineva olemuse vahel, määratledes suhte.</li>
+            <li>Näiteks klientide tabelis võib kasutada klientide ID-d kui primaarvõtit ja tellimuste tabelis klientide ID-d kui võõrvõtit, et seostada iga tellimus konkreetse kliendiga.</li>
+        </ul>
+        <p>Mudelid (Models):</p>
+        <ul>
+            <li>Mudelid on ERD-skeemid, mis näitavad olemuste, nende atribuutide ja suhete vahelisi seoseid.</li>
+            <li>Need annavad ülevaate andmebaasi struktuurist ja aitavad arendajatel mõista, kuidas erinevad andmekogumid omavahel seotud on.</li>
+            <li>Mudelid võivad olla kõrgtasemelised (nt kontseptuaalsed mudelid) või detailsemad (nt füüsilised mudelid, mis kirjeldavad konkreetse andmebaasi struktuuri).</li>
+        </ul>
+        <p>Jira</p>
+        <ul>
+            <li>Jira on ülesannete haldamise ja projektijuhtimise tarkvara, mis on laialt kasutusel tarkvaraarendusmeeskondades. See võimaldab meeskonnal jälgida ülesandeid, hallata projekte, koordineerida töövooge ja suhelda tõhusalt meeskonnaliikmete vahel. Jira pakub mitmeid funktsioone, sealhulgas ülesannete jälgimine, ajakava koostamine, ülesannete prioriteedi seadmine, teavitused ja aruandlus. Tänu sellele saavad arendusmeeskonnad paremini korraldada oma tööd, jälgida projekti edenemist ja tuvastada võimalikke takistusi varakult. Lisaks võimaldab Jira integreerida teiste populaarsete tööriistadega, nagu GitHub, Bitbucket ja Confluence, mis parandab meeskonna koostööd ja tõhusust.</li>
+        </ul>
+    </div>
+</body>
+</html>
